@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.header-wrap {
+  width: 100%;
+  border-bottom: 2px solid #E0E0E0;
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+@media (max-width: 800px) {
+  header {
+    width: 95%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    padding-bottom: 0px;
+    width: 100%;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: none;
+  }
+}
+.img {
+  width: 200px;
+  padding-right: 20px;
+}
+@media (max-width: 800px) {
+  .img {
+    align-content: center;
+    padding: 20px 0px;
+  }
+}
+.menu {
+  width: 100%;
+}
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .menu ul {
+    flex-direction: column;
+  }
+}
+.menu a p {
+  color: black;
+}
+.menu a {
+  transition: all 0.5s ease;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .menu a {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 600px) {
+  .menu a {
+    padding: 10px 13px;
+  }
+}
+@media (max-width: 500px) {
+  .menu a {
+    width: 100%;
+    padding: 10px 0px;
+    transition: all 0.5s ease;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+  }
+}
+.menu a:hover {
+  background-color: #FFC0CB;
+}
+.menu a:hover p {
+  color: white;
+}
+@media (max-width: 500px) {
+  .menu a:hover {
+    padding: 15px 0px;
+  }
+}
